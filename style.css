@@ -38,7 +38,7 @@
     width: 200px;
     height: 60px;
     background: transparent;
-    border: #18267d 2px solid;
+    border: #18267d 1.5px solid;
     border-radius: 10px;
 
     color: #18267d;
@@ -57,6 +57,27 @@
     width: 18px;
     margin: 3px 0 0 10px;
     background-image: url("./src/download.svg");
+}
+
+.download:hover {
+    background-color: #18267d;
+    border-color: #18267d;
+    color: #eee;
+
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -ms-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
+}
+.download:hover .icon {
+    background-image: url("./src/download-white.svg");
+
+    -webkit-transition: all .3s; 
+    -moz-transition: all .3s; 
+    -ms-transition: all .3s; 
+    -o-transition: all .3s; 
+    transition: all .3s;
 }
 
 .pic {
