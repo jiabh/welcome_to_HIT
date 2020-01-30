@@ -1,0 +1,669 @@
+<!--
+ * @Author: jbh
+ * @Date: 2020-01-09 15:23:02
+ * @LastEditTime : 2020-01-30 14:24:43
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贾博涵 | 欢迎报考哈尔滨工业大学</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./">Welcome to HIT</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="##">主页</a></li>
+                    <li><a href="./contact/">联系我</a></li>
+                    <li><a href="./about/">关于网站</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <p class="container wechat">您正在使用微信内置浏览器，建议点击右上角的省略号，在浏览器中打开，食用更佳。</p>
+    
+    <script>
+        function is_wechat()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        var wechat_msg = document.getElementsByClassName("wechat")[0];
+        if (is_wechat() == false) {
+            wechat_msg.style.display = "none";
+        }
+    </script>
+
+    <div class="home">
+        <div class="container">
+            <div class="row">
+                <div class="left col-md-4">
+                    <!--<h1>欢迎报考<br><strong>哈尔滨工业大学</strong><br><small>规格严格 功夫到家</small></h1>-->
+                    <img style="display: block; margin: 0 auto;" src="./src/hgdj.png" alt="">
+                    <button class="download" onclick="window.location.href='./download/'">
+                        <div class="content">宣传文件下载</div>
+                        <div class="icon"></div>
+                    </button>
+                </div>
+                <div class="col-md-8">
+                    <a class="pic" href="https://720yun.com/t/ff828wsOmuw?scene_id=205209"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="btn-group btn-group-justified" role="group">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default hit-link" onclick="window.open('http:\/\/www.hit.edu.cn\/')"><img class="link-logo" src="./src/link-icon/logo-black.svg" alt=""><br/>哈工大官网</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default hit-link" onclick="window.open('https:\/\/zsb.hit.edu.cn\/')"><img class="link-logo" src="./src/link-icon/zsb.svg" alt="zsb"><br/>哈工大招生办</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default hit-link" onclick="window.open('http:\/\/homepage.hit.edu.cn\/')"><img class="link-logo" src="./src/link-icon/homepage.svg" alt="Homepage"><br/>哈工大教师主页</button>
+                </div>
+            </div>
+        </div>
+        <p class="message">抱歉，因未知原因，哈工大招生办与教师主页暂时无法通过外网访问，开放时间未知。</p>
+    </div>
+
+    <div class="value history">
+        <div class="container">
+            <div class="col-sm-4"><img src="./src/2020.jpg" alt=""></div>
+            <div class="col-sm-8">
+                <h2>有百年历史的理工强校</h2>
+                <p>学科涵盖哲学、经济学、法学、教育学、文学、历史学、理学、工学、管理学、艺术学10个门类。工科重点一级学科数量位居全国第2，连续3年在US News世界大学工科排行榜中排名全球第6，国内第2。</p>
+            </div>
+        </div>
+    </div>
+    <div class="value spirit">
+        <div class="container">
+            <div class="col-sm-4 col-sm-push-8"><img src="./src/spirit.png" alt=""></div>
+            <div class="col-sm-7 col-sm-pull-4">
+                <h2>有家国情怀的航天名校</h2>
+                <p>
+                    铭记责任，竭诚奉献的<span>爱国精神</span>；<br class="br"/>
+                    求真务实，崇尚科学的<span>求是精神</span>；<br/>
+                    海纳百川，协作攻关的<span>团结精神</span>；<br class="br"/>
+                    自强不息，开拓创新的<span>奋进精神</span>。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="value cradle">
+        <div class="container">
+            <div class="col-sm-4"><img src="./src/cradle.png" alt="Cradle"></div>
+            <div class="col-sm-8">
+                <h2>培育“大国工匠”的摇篮</h2>
+                <p>从“东方红一号”首巡太空，到嫦娥四号登陆月球，一大批哈工大杰出校友或担任总师、总指挥，或成为各系统、各岗位的中坚和骨干。同时，哈工大也培养出了大量的国家精英，杰出校友涵盖了政治领域、科技领域、军事领域、高等学府、知名企业。</p>
+            </div>
+        </div>
+    </div>
+    <div class="value smelter">
+        <div class="container">
+            <div class="col-sm-4 col-sm-push-8"><img src="./src/smelter.png" alt="Smelter"></div>
+            <div class="col-sm-7 col-sm-pull-4">
+                <h2>铸造“国之重器”的熔炉</h2>
+                <p>神州系列飞船、蛟龙号、新体制雷达、FAST天文望远镜、东风系列洲际导弹……无数的国之重器均离不开哈工大的巨大贡献。</p>
+            </div>
+        </div>
+    </div>
+    <div class="value pragmatism">
+        <div class="container">
+            <div class="col-sm-4"><img src="./src/pragmatism.png" alt="Pragmatism"></div>
+            <div class="col-sm-8">
+                <h2>哈工大是一所学风优良求真务实的大学</h2>
+                <p>
+                    <span class="l1">冰天雪地无处去，静下心来好读书。</span class=""><br/>
+                    <span class="l2">干了很多不能说的事，<br class="br"/>做了很多别人做不了的事。</span><br/>
+                    <span class="l3">哈工大人不是坐而论道的白面书生，<br class="br"/>而是经世济用的国家栋梁。</span><br/>
+                    <span class="l4">哈工大，有一张安静的书桌，用以培养国之栋梁。</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="sources">
+        <div class="container">
+            <h2 class="sources-head">部分大学本科招生相关资源</h2>
+            <table class="zsbs table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>大学名称</th>
+                        <th>招生计划</th>
+                        <th>招生办电话</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>★</td>
+                        <td>哈尔滨工业大学</td>
+                        <td>
+                            <!--<a href="https://zsb.hit.edu.cn/information/plan?province=%E5%8C%97%E4%BA%AC" target="_blank">北京招生计划</a><br/>-->
+                            <a href="./bjzs/" target="_blank">北京招生计划</a><br/>
+                            <a href="./grade/" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0451-86414671">0451-86414671</a><br/>
+                            <a href="tel:0451-86414771">0451-86414771</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>北京大学</td>
+                        <td>
+                            <a href="https://www.gotopku.cn/programa/enrolstu/6/2019/1/1.html" target="_blank">北京招生计划</a><br/>
+                            <a href="https://www.gotopku.cn/programa/admitline/7/2019.html" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-62751407">010-62751407</a><br/>
+                            <a href="tel:010-62755074">010-62755074</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京工业大学</td>
+                        <td>
+                            <a href="http://admissions.bjut.edu.cn/zsxx/zsjh/index.html" target="_blank">招生计划</a><br/>
+                            <a href="http://admissions.bjut.edu.cn/zsxx/lnlqfs/index.html" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-67391609">010-67391609</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京航空航天大学</td>
+                        <td>
+                            <a href="https://lqcx.buaa.edu.cn/static/front/buaa/basic/html_web/zsjh.html" target="_blank">北京招生计划</a><br/>
+                            <a href="https://lqcx.buaa.edu.cn/static/front/buaa/basic/html_web/lnfs.html" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-82339327">010-82339327</a><br/>
+                            <a href="tel:010-82338240">010-82338240</a><br/>
+                            <a href="tel:010-82338793">010-82338793</a><br/>
+                            <a href="tel:010-82317695">010-82317695</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京化工大学</td>
+                        <td>
+                            <a href="http://www.goto.buct.edu.cn/f/zsjh" target="_blank">北京招生计划</a><br/>
+                            <a href="http://www.goto.buct.edu.cn/f/cjcx" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-64435706">010-64435706</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京交通大学</td>
+                        <td>
+                            <a href="https://zsw.bjtu.edu.cn/list/index/id/36.html" target="_blank">2019北京招生计划</a><br/>
+                            <a href="https://zsw.bjtu.edu.cn/list/index/id/37.html" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-51688441">010-51688441</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京科技大学</td>
+                        <td>
+                            <a href="http://zhaosheng.ustb.edu.cn/front/zs/planFirst.jspa" target="_blank">2019招生计划</a><br/>
+                            <a href="http://zhaosheng.ustb.edu.cn/front/zs/markFirst.jspa" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-62325294">010-62325294</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京理工大学</td>
+                        <td>
+                            <a href="http://admission.bit.edu.cn/html/1/168/171/index.html" target="_blank">招生计划</a><br/>
+                            <a href="http://admission.bit.edu.cn/html/1/168/172/index.html" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-68913345">010-68913345</a><br/>
+                            <a href="tel:010-68949926">010-68949926</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京林业大学</td>
+                        <td>
+                            <a href="http://zsb.bjfu.edu.cn/f/zsjh" target="_blank">招生计划</a><br/>
+                            <a href="http://zsb.bjfu.edu.cn/f/cjcx" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-62338216">010-62338216</a><br/>
+                            <a href="tel:010-62338222">010-62338222</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京邮电大学</td>
+                        <td>
+                            2019北京 <a href="https://zsb.bupt.edu.cn/content/content.php?p=4_5_853" target="_blank">招生计划</a> <a href="https://zsb.bupt.edu.cn/content/content.php?p=5_53_909" target="_blank">录取分数</a><br/>
+                            2018北京 <a href="https://zsb.bupt.edu.cn/content/content.php?p=4_5_743" target="_blank">招生计划</a> <a href="https://zsb.bupt.edu.cn/content/content.php?p=5_52_792" target="_blank">录取分数</a><br/>
+                            2017北京 <a href="https://zsb.bupt.edu.cn/content/content.php?p=4_5_619" target="_blank">招生计划</a> <a href="https://zsb.bupt.edu.cn/content/content.php?p=5_51_680" target="_blank">录取分数</a><br/>
+                            2016北京 <a href="https://zsb.bupt.edu.cn/content/content.php?p=4_5_486" target="_blank">招生计划</a> <a href="https://zsb.bupt.edu.cn/content/content.php?p=5_49_544" target="_blank">录取分数</a><br/>
+                            2015北京 <a href="https://zsb.bupt.edu.cn/content/content.php?p=4_5_385" target="_blank">招生计划</a> <a href="https://zsb.bupt.edu.cn/content/content.php?p=5_45_445" target="_blank">录取分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-62338216">010-62338216</a><br/>
+                            <a href="tel:010-62338222">010-62338222</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京语言大学</td>
+                        <td>
+                            <a href="http://zsb.blcu.edu.cn/art/2019/6/17/art_6305_1140449.html" target="_blank">2019招生计划</a><br/>
+                            <a href="http://zsb.blcu.edu.cn/art/2018/6/19/art_6305_1131496.html" target="_blank">2018招生计划</a><br/>
+                            <a href="http://zsb.blcu.edu.cn/art/2017/6/15/art_6305_1124444.html" target="_blank">2017招生计划</a><br/>
+                            <a href="http://lqcx.blcu.edu.cn/f/cjcx" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-82303943">010-82303943</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>北京中医药大学</td>
+                        <td>
+                            <a href="http://bkzs.bucm.edu.cn/zysz/zysabcd/index.htm" target="_blank">招生专业</a><br/>
+                            <a href="http://bkzs.bucm.edu.cn/fsjh2016/57489.htm" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-64286231">010-64286231</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>重庆大学</td>
+                        <td>
+                            <a href="http://zhaosheng.cqu.edu.cn/Home/queryZsjh/25" target="_blank">招生计划</a><br/>
+                            <a href="http://zhaosheng.cqu.edu.cn/Home/queryLqfs/23" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:023-65102371">023-65102371</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>大连理工大学</td>
+                        <td>
+                            <a href="http://zsb.dlut.edu.cn/plan" target="_blank">招生计划</a><br/>
+                            <a href="http://zsb.dlut.edu.cn/score" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0411-84708375">0411-84708375</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>东北大学</td>
+                        <td>
+                            <a href="http://zs.neu.edu.cn/_upload/article/images/bb/db/99a4742f4e869b945f76cecac42e/69563dec-63b6-4cbd-916e-bc0218c31251_d.jpg" target="_blank">北京招生计划及历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:024-83687392">024-83687392</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>东南大学</td>
+                        <td>
+                            <a href="https://zsb.seu.edu.cn/bjs/list.htm" target="_blank">北京招生计划及历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:025-52090271">025-52090271</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>对外经贸大学</td>
+                        <td>
+                            <a href="http://zhinengdayi.com/page/detail/NLGYFE/83/212" target="_blank">北京招生计划</a><br/>
+                            <a href="http://zhinengdayi.com/page/detail/NLGYFE/83/221" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-64492178">010-64492178</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>哈尔滨工程大学</td>
+                        <td>
+                            <a href="https://zsb.hrbeu.edu.cn/729/list.htm" target="_blank">招生计划</a><br/>
+                            <a href="https://zsb.hrbeu.edu.cn/773/list.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0451-82519740">0451-82519740</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>哈尔滨工业大学</td>
+                        <td>
+                            <!--<a href="https://zsb.hit.edu.cn/information/plan?province=%E5%8C%97%E4%BA%AC" target="_blank">北京招生计划</a><br/>-->
+                            <a href="./bjzs/" target="_blank">北京招生计划</a><br/>
+                            <a href="./grade/" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0451-86414671">0451-86414671</a><br/>
+                            <a href="tel:0451-86414771">0451-86414771</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>湖南大学</td>
+                        <td>
+                            <a href="http://admi.hnu.cn/zsxt2/lnzsjh" target="_blank">招生计划</a><br/>
+                            <a href="http://admi.hnu.cn/zsxt2/lnlqqk" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0731-88823560">0731-88823560</a><br/>
+                            <a href="tel:0731-88823578">0731-88823578</a><br/>
+                            <a href="tel:0731-88823565">0731-88823565</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>华东师范大学</td>
+                        <td>
+                            <a href="https://zsb.ecnu.edu.cn/webapp/scoreSearch-new2.jsp?moduleId=31" target="_blank">招生计划与历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:8621-62232212">8621-62232212</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>华中科技大学</td>
+                        <td>
+                            <a href="http://zsb.hust.edu.cn/lnzsjh.jsp?urltype=tree.TreeTempUrl&wbtreeid=1208" target="_blank">招生计划</a><br/>
+                            <a href="http://zsb.hust.edu.cn/fsflqfsx.jsp?wbtreeid=1261" target="_blank">历年分数</a><br/>
+                        </td>
+                        <td>
+                            <a href="tel:027-87542228">027-87542228</a><br/>
+                            <a href="tel:027-87542228">027-87559946</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>南京师范大学</td>
+                        <td>
+                            <a href="http://bkzs.njnu.edu.cn/attachment/njnu/ueditor/file/20190621/9641_%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A62019%E5%B9%B4%E7%9C%81%E5%A4%96%E6%8B%9B%E7%94%9F%E8%AE%A1%E5%88%92%E8%A1%A8%20-%20%E5%85%AC%E5%B8%83.pdf" target="_blank">2019招生计划</a><br/>
+                            <a href="http://bkzs.njnu.edu.cn/attachment/njnu/ueditor/file/20180626/6888_%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A62018%E5%B9%B4%E7%9C%81%E5%A4%96%E6%8B%9B%E7%94%9F%E8%AE%A1%E5%88%92%E8%A1%A8.pdf" target="_blank">2018招生计划</a><br/>
+                            <a href="http://bkzs.njnu.edu.cn/attachment/njnu/ueditor/file/20170622/7058_%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A62017%E6%B1%9F%E8%8B%8F%E7%9C%81%E5%A4%96%E8%AE%A1%E5%88%92.xlsx" target="_blank">2017招生计划</a><br/>
+                            <a href="http://bkzs.njnu.edu.cn/fsx?NF=&SF=%E5%8C%97%E4%BA%AC" target="_blank">北京历年分数</a><br/>
+                        </td>
+                        <td>
+                            <a href="tel:025-83720759">025-83720759</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>南开大学</td>
+                        <td>
+                            <a href="./src/nk.pdf" target="_blank">2019招生计划及历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:022-23504845">022-23504845</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Q</td>
+                        <td>清华大学</td>
+                        <td>
+                            <a href="http://www.join-tsinghua.edu.cn/" target="_blank">本科招生网</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-62770334">010-62770334</a><br/>
+                            <a href="tel:010-62782051">010-62782051</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>上海交通大学</td>
+                        <td>
+                            <a href="https://zsb.sjtu.edu.cn/web/jdzsb/3810061.htm" target="_blank">招生计划</a><br/>
+                            <a href="https://zsb.sjtu.edu.cn/web/jdzsb/3810062.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:021-34200000">021-34200000</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>首都经济贸易大学</td>
+                        <td>
+                            <a href="https://zs.cueb.edu.cn/zsxx/zsjh/index.htm" target="_blank">招生计划</a><br/>
+                            <a href="https://zs.cueb.edu.cn/zsxx/lnlqfs/index.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-83952090">010-83952090</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>首都医科大学</td>
+                        <td>
+                            <a href="http://zhsh.ccmu.edu.cn/zsxx_4323/101967.htm" target="_blank">2019北京招生计划</a><br/>
+                            <a href="http://zhsh.ccmu.edu.cn/zszc_4286/zsjh_4492/94745.htm" target="_blank">2018北京招生计划</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-83911084">010-83911084</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>四川大学</td>
+                        <td>
+                            <a href="http://zs.scu.edu.cn/bkzn1/zsjh.htm" target="_blank">招生计划</a><br/>
+                            <a href="http://zs.scu.edu.cn/bkzn1/lssj.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:028-86080605">028-86080605</a><br/>
+                            <a href="tel:028-86081605">028-86081605</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>苏州大学</td>
+                        <td>
+                            <a href="http://zsb.suda.edu.cn/search_plan.aspx?nf=2019&dr=1&yx=-1&sf=qt01&province=%E5%8C%97%E4%BA%AC" target="_blank">2019北京招生计划</a><br/>
+                            <a href="http://zsb.suda.edu.cn/search_plan.aspx?nf=2018&dr=1&yx=-1&sf=qt01&province=%E5%8C%97%E4%BA%AC" target="_blank">2018北京招生计划</a><br/>
+                            <a href="http://zsb.suda.edu.cn/search_plan.aspx?nf=2017&dr=1&yx=-1&sf=qt01&province=%E5%8C%97%E4%BA%AC" target="_blank">2017北京招生计划</a><br/>
+                            <a href="http://zsb.suda.edu.cn/markhistory_of_provice.aspx?&province=%E5%8C%97%E4%BA%AC" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0512-67507943">0512-67507943</a><br/>
+                            <a href="tel:0512-67507949">0512-67507949</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>天津大学</td>
+                        <td>
+                            <a href="http://zs.tju.edu.cn/xxcx/lnfscx/2015/201911/P020191113572346715451.jpg" target="_blank">2019北京录取分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:022-27405486">022-27405486</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>天津医科大学</td>
+                        <td>
+                            <a href="http://www.tijmu.edu.cn/_upload/article/files/ef/fb/fae6f93842b0871d0fd568a06bf2/6b37627a-37f4-44d2-b34f-db048eb6863f.pdf" target="_blank">2019招生计划</a><br/>
+                            <a href="http://www.tijmu.edu.cn/_upload/article/files/92/6b/c30e519b4f86a76deb9b180a5c39/53ebf7a2-8aaa-431e-88db-99e3852ad212.pdf" target="_blank">2018招生计划</a><br/>
+                            <a href="http://www.tijmu.edu.cn/bkzs/2017/0609/c681a4239/page.htm" target="_blank">2017招生计划</a><br/>
+                            <a href="http://www.tijmu.edu.cn/_upload/article/files/9a/96/7f9bc8154dac9d1198d5f5076ed4/761f54d0-d1f5-4a2b-9814-f9fb7037a4c5.pdf" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:022-83336711">022-83336711</a><br/>
+                            <a href="http://www.tijmu.edu.cn/bkzs/688/list.htm target="_blank"">各专业招生咨询电话</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>W</td>
+                        <td>外交学院</td>
+                        <td>
+                            <a href="http://zs.cfau.edu.cn/module/download/downfile.jsp?classid=0&filename=1d48cf6e065d42b99aca6727bca3171b.pdf" target="_blank">2019招生计划</a><br/>
+                            <a href="http://zs.cfau.edu.cn/module/download/downfile.jsp?classid=0&filename=fcfc5e4306a24566a1eb74c0b1dcfbab.pdf" target="_blank">2018招生计划</a><br/>
+                            <a href="http://zs.cfau.edu.cn/module/download/down.jsp?i_ID=64459&colID=3009" target="_blank">2017招生计划</a><br/>
+                            <a href="http://zs.cfau.edu.cn/module/download/down.jsp?i_ID=76651&colID=3010" target="_blank">北京历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-68354353">010-68354353</a><br/>
+                            <a href="tel:010-89146832">010-89146832</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>西安交通大学</td>
+                        <td>
+                            <a href="http://zs.xjtu.edu.cn/bkscx/zsjhcx.htm" target="_blank">招生计划</a><br/>
+                            <a href="http://zs.xjtu.edu.cn/bkscx/lnlqcx.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:029-82668320">029-82668320</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>西北工业大学</td>
+                        <td>
+                            <a href="http://zsb.nwpu.edu.cn/index.php?s=/Home/EveryYearQuery/datasearch.html" target="_blank">历年分数</a>                        </td>
+                        <td>
+                            <a href="tel:029-88460206">029-88460206</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>厦门大学</td>
+                        <td>
+                            <a href="https://zsgl.xmu.edu.cn/public/zsjh_query" target="_blank">招生计划</a><br/>
+                            <a href="https://zsb.xmu.edu.cn/2019/1015/c5818a380551/page.htm" target="_blank">2019录取分数</a><br/>
+                            <a href="https://zsb.xmu.edu.cn/2018/1031/c5818a355785/page.htm" target="_blank">2018录取分数</a><br/>
+                            <a href="https://zsb.xmu.edu.cn/2017/0918/c5818a299043/page.htm" target="_blank">2017录取分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:0592-2188888">0592-2188888</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Z</td>
+                        <td>中国传媒大学</td>
+                        <td>
+                            <a href="http://zhaosheng.cuc.edu.cn/zs/Inquiry/Plan.aspx" target="_blank">招生计划</a><br/>
+                            <a href="http://zhaosheng.cuc.edu.cn/zs/Inquiry/Score.aspx" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-65779370">010-65779370</a><br/>
+                            <a href="tel:010-65779256">010-65779256</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>中国科学院大学</td>
+                        <td>
+                            <a href="http://admission.ucas.ac.cn/showarticle/Article/dc7dc7f7-1b95-4d46-80e9-b6b29c4278a2/27038fd0-c0e5-4576-a2c4-587fc56d27f9" target="_blank">2019录取分数</a><br/>
+                            <a href="http://admission.ucas.ac.cn/showarticle/Article/dc7dc7f7-1b95-4d46-80e9-b6b29c4278a2/d07d55fd-61a6-432f-8380-579bfca7ee1f" target="_blank">2018录取分数</a>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>中国人民大学</td>
+                        <td>
+                            <a href="http://rdzs.ruc.edu.cn/inquiry/enrollplan/indexcms/%E5%8C%97%E4%BA%AC/2019/listcms/" target="_blank">2019北京招生计划</a><br/>
+                            <a href="http://rdzs.ruc.edu.cn/inquiry/enrollplan/indexcms/%E5%8C%97%E4%BA%AC/2018/listcms/" target="_blank">2018北京招生计划</a><br/>
+                            <a href="http://rdzs.ruc.edu.cn/inquiry/enrollplan/indexcms/%E5%8C%97%E4%BA%AC/2017/listcms/" target="_blank">2017北京招生计划</a><br/>
+                            <a href="http://rdzs.ruc.edu.cn/cms/item/1593.html" target="_blank">2019录取分数</a><br/>
+                            <a href="http://rdzs.ruc.edu.cn/cms/item/1523.html" target="_blank">2018录取分数</a><br/>
+                            <a href="http://rdzs.ruc.edu.cn/cms/item/1396.html" target="_blank">2017录取分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:400-0123-517">400-0123-517</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>中国人民大学 苏州校区</td>
+                        <td>
+                            <a href="http://sc.ruc.edu.cn/" target="_blank">中国人民大学苏州校区官网</a>
+                        </td>
+                        <td>
+                            <div>详见官网</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>中国政法大学</td>
+                        <td>
+                            <a href="http://zs.cupl.edu.cn/bkzn/zsjh.htm" target="_blank">招生计划</a><br/>
+                            <a href="http://zs.cupl.edu.cn/lnzl/gssfzylqfs.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-58909122">010-58909122</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>中央财经大学</td>
+                        <td>
+                            <a href="http://zs.cufe.edu.cn/openinfo?pid=195710" target="_blank">招生计划</a><br/>
+                            <a href="http://zs.cufe.edu.cn/openinfo?pid=195711" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:010-62288332">010-62288332</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="copyright">©2020 贾博涵. All rights reserved.</div>
+    
+    <script src="./css/jquery.min.js"></script>
+    <script src="./css/bootstrap.min.js"></script>
+</body>
+
+</html>

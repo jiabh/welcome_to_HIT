@@ -1,0 +1,130 @@
+body {
+    background-color: #f5f7f9;
+}
+
+.home {
+    width: 90%;
+    padding: 25px 5% 50px;
+    margin: 70px auto 20px;
+    background-color: white;
+
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home {
+        width: 60%;
+        padding: 50px 5% 50px;
+        margin: 100px auto;
+    }
+}
+
+.wrapper {
+    margin: 35px 0 35px;
+    text-align: left;
+    border: 1px solid #ececed;
+    border-radius: 2px;
+    background-color: #f7f7f7;
+}
+
+.content {
+    text-align: left;
+    font-size: 13px;
+    color: #888;
+}
+
+@media screen and (min-width: 768px) {
+    .content .mobile {
+        visibility: hidden;
+    }
+}
+
+.attachment {
+    vertical-align: middle;
+    width: 304px;
+    height: 60px;
+    margin: 35px auto;
+    padding: 10px 0 10px 16px;
+}
+
+.attachment-info {
+    float: left;
+    width: auto;
+    height: 60px;
+}
+
+.attachment-icon {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.attachment-name {
+    width: 188px;
+    height: 40px;
+    float: left;
+    margin-left: 12px;
+
+    text-align: left;
+    color: #4a4a5a;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 36px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.attachment-name-with-size {
+    line-height: 1.3;
+}
+
+.attachment-name-with-size span {
+    font-size: 12px;
+}
+
+.attachment-download {
+    width: 30px;
+    height: 30px;
+    float: left;
+
+    margin-top: 4px;
+    background-image: url("./cloud-download.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+    .attachment-download {
+        visibility: hidden;
+    }
+    .attachment:hover .attachment-download {
+        visibility: visible;
+    }
+}
+
+.video-name {
+    margin: 10px 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.player-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.player {
+    width: 80%;
+}

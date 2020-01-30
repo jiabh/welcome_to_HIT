@@ -1,0 +1,116 @@
+<!--
+ * @Author: jbh
+ * @Date: 2020-01-26 14:30:34
+ * @LastEditTime : 2020-01-30 14:25:22
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贾博涵 | 宣传文件</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../">Welcome to HIT</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../">主页</a></li>
+                    <li><a href="../contact/">联系我</a></li>
+                    <li><a href="../about/">关于网站</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="home">
+        <p class="content">
+            注：附件单击左侧在线查看；单击右侧下载按钮离线查看。建议采用在线查看方式以保证数据及时更新。<span class="mobile">此页面没太做移动端适配，PC端食用更佳。</span><span class="wechat">您正在使用微信内置浏览器，如遇到问题，建议点击右上角的省略号，在浏览器中打开。</span>
+        </p>
+
+        <div class="wrapper attachment">
+            <div class="attachment-info" onclick="window.open('.\/major\/')">
+                <img class="attachment-icon" src="./logo-666.svg" alt="HIT-icon">
+                <div class="attachment-name">2019年本科招生专业</div>
+            </div>
+            <a class="attachment-download" href="./2019年本科招生专业 - 哈尔滨工业大学招生办.png" download="2019年本科招生专业 - 哈尔滨工业大学招生办.png"></a>
+        </div>
+
+        <div class="wrapper attachment">
+            <div class="attachment-info" onclick="window.open('https:\/\/gaokao.chsi.com.cn\/zsgs\/zhangcheng\/listZszc--schId-174.dhtml')">
+                <img class="attachment-icon" src="./logo-666.svg" alt="HIT-icon">
+                <div class="attachment-name">哈尔滨工业大学招生章程</div>
+            </div>
+            <a class="attachment-download" href="./2019年本科招生章程 - 哈尔滨工业大学招生办.png" download="2019年本科招生章程 - 哈尔滨工业大学招生办.png"></a>
+        </div>
+
+        <div class="wrapper attachment">
+            <div class="attachment-info" onclick="window.open('.\/哈尔滨工业大学招生简章.pdf')">
+                <img class="attachment-icon" src="./logo-666.svg" alt="HIT-icon">
+                <div class="attachment-name attachment-name-with-size">
+                    <span>哈尔滨工业大学招生简章.pdf</span><br/>
+                    <span>31.5MB</span>
+                </div>
+            </div>
+            <a class="attachment-download" href="./哈尔滨工业大学招生简章.pdf" download="哈尔滨工业大学招生简章.pdf"></a>
+        </div>
+        
+        <div class="wrapper video">
+            <div class="video-name">视频：迈向世界一流的哈尔滨工业大学</div>
+            <div class="player-container">
+                <iframe class="player" src="https://player.bilibili.com/player.html?aid=53928064&cid=94335669&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="copyright">©2020 贾博涵. All rights reserved.</div>
+
+    <script src="../css/jquery.min.js"></script>
+    <script src="../css/bootstrap.min.js"></script>
+    
+    <script>
+        var obj_array = document.getElementsByClassName("player");
+
+        for (var i = 0; i < obj_array.length; i++)
+        {
+            var obj = obj_array[i];
+            obj.setAttribute("height", (obj.clientWidth * 3 / 4).toString());
+        }
+
+        function is_wechat()
+        {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        var wechat_msg = document.getElementsByClassName("wechat")[0];
+        if (is_wechat()) {
+            wechat_msg.style.visibility = visible;
+        }
+        else {
+            wechat_msg.style.display = "none";
+        }
+    </script>
+</body>

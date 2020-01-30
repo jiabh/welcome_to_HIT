@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url('./fonts/segoeui.ttf') format('truetype');
+}
+
+body {
+    font-weight: 400;
+    color: #444;
+}
+
+.container {
+    text-align: center;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .home {
+        margin-top: 100px;
+    }
+}
+
+.navbar {
+    background-color: #18267d;
+    border-bottom-width: 0px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+}
+
+.navbar .navbar-header .navbar-toggle {
+    background-color: #18267d;
+    border: 0px;
+}
+.navbar .navbar-header .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    letter-spacing: -0.02rem;
+}
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+.navbar .nav > li > a {
+    color: white;
+    font-size: 16px;
+}
+.navbar .nav > li > a:hover {
+    color: white;
+}
+.navbar .nav > li > a:visited {
+    color: white;
+}
+
+.navbar .nav .active > a {
+    color: white;
+    background-color: #74c5be;
+    font-weight: 660;
+}
+.navbar .nav .active > a:hover {
+    color: white;
+    background-color: #74c5be;
+    font-weight: 660;
+}
+.navbar .nav .active > a:visited {
+    color: white;
+    background-color: #74c5be;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 20px;
+}

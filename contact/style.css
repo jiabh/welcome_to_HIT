@@ -1,0 +1,41 @@
+body {
+    background-color: #f5f7f9;
+}
+
+.home {
+    width: 90%;
+    padding: 25px 5% 50px;
+    margin: 70px auto 20px;
+    background-color: white;
+
+    font-size: 14px;
+    line-height: 2;
+}
+
+.qr {
+    text-align: center;
+}
+
+.qr img {
+    width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+    .home {
+        font-size: 20px;
+    }
+
+    .qr img {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home {
+        width: 60%;
+        padding: 50px 5% 50px;
+        margin: 100px auto;
+    }
+}
+
+

@@ -1,0 +1,36 @@
+.container {
+    margin-top: 50px;
+}
+
+.year > h3 {
+    color: #fe8f00;
+}
+
+.grade > thead > tr > th {
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+
+.grade > thead > tr > .th1 {
+    background-color: #3594d7;
+}
+.grade > thead > tr > .th2 {
+    background-color: #1878bb;
+}
+
+.grade > tbody > .sum > td {
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 992px) {
+    .grade > thead > tr > th {
+        font-size: large;
+    }
+
+    .grade > tbody > tr > td {
+        font-size: 17px;
+        line-height: 2;
+    }
+}

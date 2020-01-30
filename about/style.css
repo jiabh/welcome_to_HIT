@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "barlow";
+    src: url('./barlow-regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #f5f7f9;
+}
+
+.home {
+    width: 90%;
+    padding: 25px 5% 50px;
+    margin: 70px auto 20px;
+    background-color: white;
+}
+
+.home h2 {
+    line-height: 2.5;
+}
+
+.home h3 {
+    line-height: 1.6;
+}
+
+.home p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .home p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home {
+        width: 60%;
+        padding: 50px 5% 50px;
+        margin: 100px auto;
+    }
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.color {
+    font-family: "barlow";
+    height: 100px;
+    width: 20%;
+    font-size: 20px;
+    padding-left: 5px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+    .color {
+        height: 100px;
+        width: 25%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    h3 {
+        font-size: 13px;
+    }
+    .color {
+        height: 80px;
+        width: 33.33%;
+        font-size: 15px;
+    }
+}
+
+.color.light {
+    color: white;
+}
+
+.color.dark {
+    color: black;
+}

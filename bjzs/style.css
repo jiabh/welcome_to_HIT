@@ -1,0 +1,39 @@
+.container {
+    margin-top: 50px;
+}
+
+.t2019 > h3 {
+    color: #fe8f00;
+}
+.t2018 > h3 {
+    color: #fe8f00;
+}
+
+.plan > thead > tr > th {
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+
+.plan > thead > tr > .th1 {
+    background-color: #3594d7;
+}
+.plan > thead > tr > .th2 {
+    background-color: #1878bb;
+}
+
+.plan > tbody > .sum > td {
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 992px) {
+    .plan > thead > tr > th {
+        font-size: large;
+    }
+
+    .plan > tbody > tr > td {
+        font-size: 17px;
+        line-height: 2;
+    }
+}
