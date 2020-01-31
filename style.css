@@ -91,16 +91,6 @@
     padding-bottom: 68%;
 }
 
-.message {
-    margin-top: 12px;
-    color: #777;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 /*    value-props    */
 .value {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
