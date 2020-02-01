@@ -1,7 +1,7 @@
 <!--
  * @Author: jbh
  * @Date: 2020-01-09 15:23:02
- * @LastEditTime : 2020-01-31 09:05:57
+ * @LastEditTime : 2020-02-01 17:32:47
  -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -46,7 +46,7 @@
         function is_wechat()
         {
             var ua = navigator.userAgent.toLowerCase();
-            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            if (ua.match(/MicroMessenger/i) === "micromessenger") {
                 return true;
             } else {
                 return false;
@@ -54,7 +54,7 @@
         }
         
         var wechat_msg = document.getElementsByClassName("wechat")[0];
-        if (is_wechat() == false) {
+        if (is_wechat() === false) {
             wechat_msg.style.display = "none";
         }
     </script>
@@ -424,6 +424,17 @@
                     </tr>
                     <tr>
                         <td>N</td>
+                        <td>南京航空航天大学</td>
+                        <td>
+                            <a href="http://zs.nuaa.edu.cn/zsjh/list.htm" target="_blank">招生计划</a><br/>
+                            <a href="http://zs.nuaa.edu.cn/lnlqfs/list.htm" target="_blank">历年分数</a>
+                        </td>
+                        <td>
+                            <a href="tel:4001810287">4001810287</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
                         <td>南京师范大学</td>
                         <td>
                             <a href="http://bkzs.njnu.edu.cn/attachment/njnu/ueditor/file/20190621/9641_%E5%8D%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A62019%E5%B9%B4%E7%9C%81%E5%A4%96%E6%8B%9B%E7%94%9F%E8%AE%A1%E5%88%92%E8%A1%A8%20-%20%E5%85%AC%E5%B8%83.pdf" target="_blank">2019招生计划</a><br/>
